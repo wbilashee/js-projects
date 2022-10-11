@@ -1,0 +1,147 @@
+body {
+  line-height: 1.45;
+  background: #f1f5f8;
+}
+
+main {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.title {
+  margin-bottom: 6rem;
+}
+
+h2 {
+  font-size: 4rem;
+  color: #102a42;
+  text-align: center;
+}
+
+.underline {
+  width: 8rem;
+  margin: auto;
+  height: 0.4rem;
+  background: var(--light-blue);
+}
+
+.container {
+  width: 80vw;
+  max-width: var(--fixed-width);
+}
+
+.review {
+  margin: auto;
+  padding: 2rem;
+  font-size: 1.75rem;
+  text-align: center;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.img-container {
+  width: 15rem;
+  height: 15rem;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.img-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: -0.4rem;
+  right: -0.7rem;
+  background: var(--light-blue);
+}
+
+.img-container::after {
+  content: url("../assets/icons/quote.svg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3.5rem;
+  height: 3.5rem;
+  font-weight: 800;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  padding-top: 0.4rem;
+  padding-left: 0.2rem;
+  transform: translateY(25%);
+  background: var(--light-blue);
+}
+
+#person-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+}
+
+#author {
+  text-transform: capitalize;
+}
+
+#job {
+  font-size: 1.6rem;
+  margin: 0.35rem auto;
+  color: var(--light-blue);
+  text-transform: uppercase;
+}
+
+#info {
+  font-size: 1.65rem;
+}
+
+.button-container {
+  margin-top: 1.5rem;
+}
+
+.prev-btn,
+.next-btn {
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #8bcbf9;
+  background: none;
+  margin: 0 0.75rem;
+  transition: var(--transition);
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  color: var(--light-blue);
+}
+
+.random-btn {
+  cursor: pointer;
+  font-weight: 400;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  background: #ebf7ff;
+  border-radius: 0.35rem;
+  color: var(--light-blue);
+  text-transform: capitalize;
+  transition: var(--transition);
+  border: 2px solid var(--light-blue);
+}
+
+.random-btn:hover {
+  color: white;
+  background: var(--light-blue);
+}
+
+@media screen and (max-width: 350px) {
+  h2 {
+    font-size: 3rem;
+  }
+}

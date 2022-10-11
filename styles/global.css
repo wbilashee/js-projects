@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
 
 :root {
+  --fixed-width: 620px;
+  --light-blue: #49a6e9;
   --transition: all 0.3s linear;
 }
 
