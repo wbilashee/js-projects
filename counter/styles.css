@@ -1,0 +1,61 @@
+body {
+  color: #102a42;
+  background: #f1f5f8;
+}
+
+main {
+  height: 100vh;
+  display: grid;
+  text-align: center;
+  place-items: center;
+}
+
+h2 {
+  font-size: 7rem;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 10rem;
+}
+
+#btn-container {
+  display: flex;
+  margin-top: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+}
+
+.btn:not(:last-child) {
+  margin-right: 1.75rem;
+}
+
+.btn:hover {
+  color: white;
+  background: #222;
+}
+
+@media screen and (max-width: 450px) {
+  h2 {
+    font-size: 4rem;
+  }
+
+  h1 {
+    font-size: 6rem;
+  }
+
+  .btn {
+    font-size: 1.25rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .btn:not(:last-child) {
+    margin-right: 1.25rem;
+  }
+}
