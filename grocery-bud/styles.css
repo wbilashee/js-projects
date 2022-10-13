@@ -1,0 +1,159 @@
+body {
+  background: #f1f5f8;
+}
+
+main {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: 56rem;
+  color: #102a42;
+  min-height: 10rem;
+  padding: 2rem 3rem;
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.alert {
+  display: grid;
+  height: 2rem;
+  text-align: center;
+  font-size: 1.35rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+}
+
+.alert-danger {
+  color: #721c24;
+  background: #f8d7da;
+}
+
+.alert-success {
+  color: #155724;
+  background: #d4edda;
+}
+
+h3 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  margin: 3rem 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1.5rem;
+  font-family: inherit;
+  background: #f1f5f8;
+}
+
+#grocery {
+  flex: 1;
+  padding-left: 1.5rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+#submit-btn {
+  flex: 0.15;
+  cursor: pointer;
+  background: #a5d5f8;
+  transition: var(--transition);
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+#submit-btn:hover {
+  color: white;
+  background: #49a6e9;
+}
+
+.grocery-container {
+  margin-top: 3.2rem;
+  visibility: hidden;
+  transition: var(--transition);
+}
+
+.show-container {
+  visibility: visible;
+}
+
+.grocery-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  text-transform: capitalize;
+  transition: var(--transition);
+  justify-content: space-between;
+}
+
+.grocery-item:hover {
+  color: #617d98;
+  background: #f1f5f8;
+}
+
+.title {
+  color: #102a42;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+  transition: var(--transition);
+}
+
+.edit-btn,
+.delete-btn {
+  cursor: pointer;
+  margin: 0 0.25rem;
+  font-size: 1.25rem;
+  border-color: transparent;
+  background: transparent;
+  transition: var(--transition);
+}
+
+.edit-btn {
+  color: #6be675;
+}
+
+.delete-btn {
+  color: #e66b6b;
+}
+
+.clear-btn {
+  width: 10rem;
+  display: grid;
+  height: 3rem;
+  margin: 0 auto;
+  cursor: pointer;
+  color: #e66b6b;
+  font-size: 1.35rem;
+  margin-top: 1.25rem;
+  align-items: center;
+  letter-spacing: 0.1rem;
+  background: transparent;
+  border-color: transparent;
+  text-transform: capitalize;
+  transition: var(--transition);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90vw;
+  }
+}
