@@ -1,0 +1,77 @@
+body {
+  color: white;
+  background: #f1f5f8;
+}
+
+header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
+    url("../assets/tiles/travel-background.jpg") center/cover no-repeat;
+}
+
+nav {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  padding: 2.5rem 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h3 {
+  font-size: 2.75rem;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  font-size: 1.75rem;
+  margin-right: 3rem;
+  text-decoration: none;
+}
+
+section {
+  height: 50rem;
+}
+
+#services {
+  background: white;
+}
+
+section h1 {
+  color: #102a42;
+  font-size: 3.5rem;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+footer {
+  font-size: 2rem;
+  text-align: center;
+  padding: 7rem 1rem;
+  background: #102a42;
+}
+
+.top-link {
+  position: fixed;
+  right: 2rem;
+  bottom: 3rem;
+  z-index: -1;
+  font-size: 2rem;
+  color: #b1d5f1;
+  visibility: hidden;
+}
+
+.show-link {
+  z-index: 10;
+  visibility: visible;
+}
