@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../assets/icons/postman.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/prism.css" />
+    <title>Postman</title>
+  </head>
+  <body>
+    <main>
+      <h2>Postman</h2>
+      <form class="form">
+        <div class="form-group">
+          <div class="form-control">
+            <label for="url">URL</label>
+          </div>
+          <div class="form-control">
+            <input
+              type="url"
+              name="url"
+              id="url"
+              autocomplete="off"
+              placeholder="Enter URL here"
+            />
+          </div>
+        </div>
+        <fieldset class="form-group">
+          <div class="form-control">
+            <legend>Response Type</legend>
+          </div>
+          <div class="form-control radios">
+            <label for="GET"
+              ><input
+                type="radio"
+                name="response-type"
+                value="GET"
+                id="GET"
+                checked
+              />
+              GET</label
+            >
+            <label for="POST"
+              ><input
+                type="radio"
+                name="response-type"
+                value="POST"
+                id="POST"
+              />
+              POST</label
+            >
+          </div>
+        </fieldset>
+        <fieldset class="form-group">
+          <div class="form-control">
+            <legend>Content Type</legend>
+          </div>
+          <div class="form-control radios">
+            <label for="json"
+              ><input
+                type="radio"
+                name="content-type"
+                value="json"
+                id="json"
+                checked
+              />
+              JSON</label
+            >
+            <label for="custom-parameters"
+              ><input
+                type="radio"
+                name="content-type"
+                value="custom-parameters"
+                id="custom-parameters"
+              />
+              Custom Parameters</label
+            >
+          </div>
+        </fieldset>
+        <fieldset id="request-json-box" class="form-group">
+          <div class="form-control">
+            <legend>Enter Request JSON</legend>
+          </div>
+          <div class="form-control">
+            <textarea
+              name="request-json"
+              id="request-json"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+        </fieldset>
+        <fieldset id="parameters-box" class="form-group parameter">
+          <div class="form-control">
+            <legend>Parameter 1</legend>
+          </div>
+          <div class="form-control parameter-inputs">
+            <input
+              type="text"
+              name="parameter-key-1"
+              id="parameter-key-1"
+              autocomplete="off"
+              placeholder="Enter Parameter 1 Key"
+            />
+            <input
+              type="text"
+              name="parameter-value-1"
+              id="parameter-value-1"
+              autocomplete="off"
+              placeholder="Enter Parameter 1 Value"
+            />
+            <button type="button" class="btn" onclick="addParam()">+</button>
+          </div>
+        </fieldset>
+        <div id="params"></div>
+        <div class="form-group">
+          <div class="form-control">
+            <input class="btn" id="submit-btn" type="submit" value="submit" />
+          </div>
+        </div>
+        <fieldset class="form-group">
+          <div class="form-control">
+            <legend>Response</legend>
+          </div>
+          <div class="form-control response">
+            <pre
+              id="responsePre"
+              class="language-javascript"
+            > <code id='response-prism' class="language-javascript"> Your response will appear here </code> </pre>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <script src="./js/app.js"></script>
+    <script src="./js/prism.js"></script>
+  </body>
+</html>
