@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../assets/icons/fancy-slider.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Fancy Slider</title>
+  </head>
+  <body>
+    <main>
+      <div class="form-container">
+        <h3>Search image for slider</h3>
+        <form class="search-form">
+          <input
+            type="text"
+            name="image"
+            id="image"
+            autocomplete="off"
+            placeholder="Search for image"
+          />
+          <input class="btn" type="submit" id="searchBtn" value="Search" />
+        </form>
+      </div>
+      <div class="duration-form-container">
+        <h3>Select image for slider</h3>
+        <form class="duration-form">
+          <input
+            type="text"
+            name="duration"
+            id="duration"
+            autocomplete="off"
+            placeholder="Change slider duration"
+          />
+          <input class="btn create-btn" type="submit" value="Create Slider" />
+        </form>
+      </div>
+      <div class="gallery">
+        <div class="loader">
+          <img src="./loader.gif" alt="loader" />
+        </div>
+      </div>
+      <div class="slider"></div>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,169 @@
+:root {
+  --pink: #fd8086;
+}
+
+body {
+  background: #f1f5f8;
+}
+
+main {
+  position: relative;
+}
+
+.form-container {
+  width: 55vw;
+  margin: 5rem auto 3rem;
+}
+
+h3 {
+  color: var(--pink);
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.search-form {
+  display: flex;
+  margin: 4rem auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-size: 1.65rem;
+  margin-right: 2rem;
+  font-family: inherit;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+#image {
+  flex: 1;
+}
+
+.btn {
+  flex: 0.025;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  background: var(--pink);
+  transition: var(--transition);
+}
+
+.btn:hover {
+  opacity: 0.75;
+}
+
+.duration-form-container {
+  width: 70vw;
+  margin: auto;
+  display: none;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.duration-form {
+  display: flex;
+  margin-top: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery {
+  width: 90vw;
+  display: grid;
+  grid-gap: 5rem;
+  margin: 5rem auto;
+  position: relative;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.loader {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  visibility: visible;
+}
+
+.hide-loader {
+  z-index: -1;
+  visibility: hidden;
+}
+
+.img-div {
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: 5px solid #fff;
+  transition: 0.2s box-shadow linear;
+}
+
+.img-div:hover {
+  box-shadow: 0 0 2px 1px #49a6e9;
+}
+
+.img-div.selected {
+  outline: 2px solid var(--pink);
+}
+
+.img-div.selected:hover {
+  box-shadow: 0 0 2px 1px var(--pink);
+}
+
+.img-div img,
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider {
+  width: 80vw;
+  height: 60vh;
+  display: none;
+  max-width: 80rem;
+  overflow: hidden;
+  position: relative;
+  margin: 7.5rem auto;
+  border-radius: 0.5rem;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: var(--transition);
+}
+
+@media screen and (max-width: 992px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .duration-form-container {
+    width: 90vw;
+    flex-direction: column;
+  }
+
+  .duration-form {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form-container {
+    width: 75vw;
+  }
+
+  .gallery {
+    width: 85vw;
+    grid-template-columns: 1fr;
+  }
+}
