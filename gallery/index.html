@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../assets/icons/gallery.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Gallery</title>
+  </head>
+  <body>
+    <section class="section veggies">
+      <img
+        src="./images/veggie-1.jpg"
+        class="img"
+        title="veggie-1"
+        data-id="veggie-1"
+        alt="veggie-1"
+      />
+      <img
+        src="./images/veggie-2.jpg"
+        class="img"
+        title="veggie-2"
+        data-id="veggie-2"
+        alt="veggie-2"
+      />
+      <img
+        src="./images/veggie-3.jpg"
+        class="img"
+        title="veggie-3"
+        data-id="veggie-3"
+        alt="veggie-3"
+      />
+    </section>
+    <section class="section cities">
+      <img
+        src="./images/city-1.jpg"
+        class="img"
+        title="city-1"
+        data-id="city-1"
+        alt="city-1"
+      />
+      <img
+        src="./images/city-2.jpg"
+        class="img"
+        title="city-2"
+        data-id="city-2"
+        alt="city-2"
+      />
+      <img
+        src="./images/city-3.jpg"
+        class="img"
+        title="city-3"
+        data-id="city-3"
+        alt="city-3"
+      />
+    </section>
+    <div class="modal">
+      <button class="close-btn">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="modal-content">
+        <button class="prev-btn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="next-btn">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        <img src="./images/veggie-1.jpg" class="main-img" alt="image" />
+        <h3 class="image-name"></h3>
+        <div class="modal-images"></div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/7cb730151f.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
