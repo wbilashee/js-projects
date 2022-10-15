@@ -1,0 +1,62 @@
+:root {
+  --color: #ffd480;
+  --purple: #aa99ff;
+  --background: #f1f5f8;
+}
+
+:root.dark {
+  --purple: #3e3373;
+  --background: #282c35;
+}
+
+body {
+  color: var(--color);
+  background: var(--background);
+  transition: var(--transition);
+}
+
+main {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: 45vw;
+  height: 30vh;
+  display: grid;
+  position: relative;
+  place-items: center;
+  border-radius: 0.5rem;
+  background: var(--purple);
+  transition: var(--transition);
+}
+
+.btn-toggler {
+  border: 0;
+  outline: 0;
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  cursor: pointer;
+  font-size: 2.75rem;
+  color: var(--color);
+  background: transparent;
+  transition: var(--transition);
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    width: 65vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 85vw;
+  }
+}
