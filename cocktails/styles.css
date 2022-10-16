@@ -1,0 +1,171 @@
+body {
+  color: #102a42;
+  background: #f1f5f8;
+}
+
+main {
+  margin: 5rem auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #102a42;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.search-form {
+  width: 40vw;
+  margin: 3rem auto;
+}
+
+#cocktail {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  font-weight: 500;
+  font-size: 1.65rem;
+  padding: 1rem 1.5rem;
+  font-family: inherit;
+  border-radius: 0.5rem;
+}
+
+.cocktails-container {
+  width: 85vw;
+  display: grid;
+  margin: 6rem auto;
+  grid-gap: 5rem 5rem;
+  position: relative;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.loading {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  z-index: 999;
+  place-items: center;
+  visibility: visible;
+}
+
+.hide-loading {
+  z-index: -1;
+  visibility: hidden;
+}
+
+.cocktail {
+  position: relative;
+  background: white;
+  margin-bottom: 3rem;
+  border-radius: 0.5rem;
+  transition: var(--transition);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cocktail:hover {
+  transform: scale(1.005);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cocktail img {
+  width: 100%;
+  display: block;
+  height: 26.8rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  border: 1rem solid white;
+  transition: var(--transition);
+}
+
+.cocktail img:hover {
+  filter: blur(2px);
+}
+
+.cocktail h3 {
+  position: absolute;
+  bottom: -1rem;
+  right: -1rem;
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 1.5rem 3rem;
+  background: #102a42;
+  border-radius: 0.5rem;
+  font-family: monospace;
+  text-transform: uppercase;
+}
+
+.single-drink {
+  width: 85vw;
+  display: grid;
+  margin: 7rem auto;
+  position: relative;
+  grid-gap: 4rem 4rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.drink-img {
+  width: 100%;
+  height: 40rem;
+  object-fit: cover;
+  display: block;
+  border-radius: 0.5rem;
+  border: 10px solid white;
+}
+
+.drink-info {
+  padding-top: 3.2rem;
+}
+
+.drink-desc {
+  margin: 1rem 0;
+  font-size: 1.75rem;
+}
+
+.drink-ingredients .far {
+  margin-right: 1.6rem;
+}
+
+.single-drink .btn {
+  color: white;
+  margin-top: 3.2rem;
+  background: #fe4f60;
+  display: inline-block;
+  text-transform: capitalize;
+  padding: 0.75rem 2rem;
+}
+
+.single-drink .btn:hover {
+  background: #e34757;
+}
+
+@media screen and (max-width: 992px) {
+  .cocktails-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .search-form {
+    width: 65vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cocktails-container {
+    grid-template-columns: 1fr;
+  }
+
+  .single-drink {
+    grid-template-columns: 1fr;
+  }
+}
