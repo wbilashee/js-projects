@@ -25,6 +25,10 @@ body {
   font-family: "Quicksand", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .btn {
   outline: 0;
   cursor: pointer;
