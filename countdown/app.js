@@ -1,5 +1,5 @@
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thrusday", "Friday", "Saturday"];
+const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 const giveaway = document.getElementById("giveaway");
 const deadline = document.querySelector(".deadline");
@@ -8,7 +8,7 @@ const items = document.querySelectorAll(".deadline-format h4");
 const tempDate = new Date();
 const tempYear = tempDate.getFullYear();
 const tempMonth = tempDate.getMonth();
-const tempDay = tempDate.getDay();
+const tempDay = tempDate.getDate();
 
 const futureDate = new Date(tempYear, tempMonth, tempDay + 15, 10, 30, 0);
 
