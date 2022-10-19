@@ -1,10 +1,5 @@
 body {
-  color: #102a42;
-  background: #f1f5f8;
-}
-
-a {
-  text-decoration: none;
+  color: var(--dark-blue);
 }
 
 .img {
@@ -27,7 +22,7 @@ a {
   width: 10rem;
   height: 0.35rem;
   margin: 1rem auto;
-  background: #ff8087;
+  background: var(--pink-red);
 }
 
 .products-container {
@@ -54,7 +49,7 @@ a {
 }
 
 .product {
-  color: #102a42;
+  color: var(--dark-blue);
 }
 
 .product-img {
@@ -67,22 +62,22 @@ a {
 }
 
 .name {
-  color: #64748b;
   font-weight: 500;
   font-size: 1.4rem;
   margin-bottom: 0.45rem;
+  color: var(--slate-gray);
   text-transform: capitalize;
 }
 
 .price {
-  color: #334155;
+  color: var(--dark-gray);
   font-weight: 700;
 }
 
 .btn {
   border: none;
   color: white;
-  background: #ff8087;
+  background: var(--pink-red);
   text-transform: capitalize;
 }
 
@@ -128,8 +123,8 @@ a {
 
 .product-info h4 {
   font-size: 2rem;
-  color: #64748b;
   font-weight: 500;
+  color: var(--slate-gray);
 }
 
 .product-info h6 {
@@ -152,8 +147,8 @@ a {
 .error {
   font-size: 2rem;
   font-weight: 500;
-  color: #b13434;
   text-align: center;
+  color: var(--dark-red);
 }
 
 @media screen and (max-width: 992px) {

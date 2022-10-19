@@ -3,10 +3,9 @@ html {
 }
 
 body {
-  color: #102a42;
   line-height: 1.5;
   font-size: 1rem;
-  background: #f1f5f8;
+  color: var(--dark-blue);
 }
 
 .menu {
@@ -24,7 +23,7 @@ body {
   height: 0.25rem;
   margin-left: auto;
   margin-right: auto;
-  background: #c59d5f;
+  background: var(--gold);
 }
 
 .btn-container {
@@ -35,30 +34,30 @@ body {
 
 .btn {
   background: transparent;
-  border-color: #c59d5f;
+  border-color: var(--gold);
   font-size: 1rem;
   text-transform: capitalize;
   margin: 0 0.5rem;
   letter-spacing: 1px;
   border-radius: 0.5rem;
   padding: 0.375rem 0.75rem;
-  color: #c59d5f;
+  color: var(--gold);
   cursor: pointer;
   transition: var(--transition);
 }
 
 .btn:hover {
-  background: #c59d5f;
+  background: var(--gold);
   color: white;
 }
 
 .menu-container {
   width: 90vw;
   margin: 0 auto;
-  max-width: 1170px;
   display: grid;
   gap: 3rem 2rem;
   justify-items: center;
+  max-width: var(--max-width);
 }
 
 .menu-item {
@@ -72,21 +71,22 @@ body {
   height: 200px;
   object-fit: cover;
   border-radius: 0.5rem;
-  border: 0.25rem solid #c59d5f;
+  border: 0.25rem solid var(--gold);
 }
 
 .item-info header {
   display: flex;
   justify-content: space-between;
-  border-bottom: 0.5px dotted #617d98;
+  border-bottom: 0.5px dotted var(--grayish-blue);
 }
+
 .item-info h4 {
   margin-bottom: 0.5rem;
   text-transform: capitalize;
 }
 
 .price {
-  color: #c59d5f;
+  color: var(--gold);
 }
 
 .item-text {

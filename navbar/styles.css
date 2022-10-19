@@ -1,6 +1,5 @@
 body {
   overflow: hidden;
-  background: #f1f5f8;
 }
 
 nav {
@@ -14,14 +13,9 @@ nav {
   height: 7.25rem;
 }
 
-nav li {
-  list-style: none;
-}
-
 nav a {
   margin-right: 0;
-  color: #102a42;
-  text-decoration: none;
+  color: var(--dark-blue);
   transition: var(--transition);
 }
 

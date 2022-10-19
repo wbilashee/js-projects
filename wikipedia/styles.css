@@ -1,16 +1,8 @@
-body {
-  background: #f1f5f8;
-}
-
-a {
-  text-decoration: none;
-}
-
 .wiki {
   width: 90vw;
   margin: 0 auto;
   padding: 8rem 0;
-  max-width: 1170px;
+  max-width: var(--max-width);
 }
 
 .container {
@@ -53,7 +45,7 @@ a {
 .submit-btn {
   color: white;
   cursor: pointer;
-  background: #3b3738;
+  background: var(--dark-gray);
   text-transform: capitalize;
 }
 
@@ -66,8 +58,8 @@ a {
 }
 
 .error {
-  color: #ee4351;
   text-align: center;
+  color: var(--dark-red);
   text-transform: capitalize;
 }
 
@@ -78,10 +70,10 @@ a {
 
 .articles a {
   display: block;
-  color: #102a42;
   background: white;
   padding: 1.5rem 2rem;
   border-radius: 0.5rem;
+  color: var(--dark-blue);
   transition: var(--transition);
 }
 

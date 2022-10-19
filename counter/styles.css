@@ -1,6 +1,5 @@
 body {
-  color: #102a42;
-  background: #f1f5f8;
+  color: var(--dark-blue);
 }
 
 main {
@@ -38,7 +37,7 @@ h1 {
 
 .btn:hover {
   color: white;
-  background: #222;
+  background: var(--black);
 }
 
 @media screen and (max-width: 450px) {

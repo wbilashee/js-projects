@@ -1,10 +1,9 @@
 body {
   font-size: 1.75rem;
-  background: #f1f5f8;
 }
 
 h1 {
-  color: #96736c;
+  color: var(--almond);
   text-align: center;
   font-style: italic;
   margin-top: 10vh;
@@ -13,7 +12,7 @@ h1 {
 
 .question-container {
   margin: auto;
-  max-width: 620px;
+  max-width: var(--fixed-width);
 }
 
 .question {
@@ -21,7 +20,7 @@ h1 {
   margin-bottom: 3rem;
   border-radius: 0.5rem;
   padding: 2.5rem 2.5rem 0 2.5rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--light-shadow);
 }
 
 .question-title {
@@ -33,7 +32,7 @@ h1 {
 
 .question-btn {
   cursor: pointer;
-  color: #96736c;
+  color: var(--almond);
   font-size: 2rem;
   border: transparent;
   background: transparent;

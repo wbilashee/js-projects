@@ -1,7 +1,3 @@
-body {
-  background: #f1f5f8;
-}
-
 main {
   padding: 5rem 0;
 }
@@ -13,19 +9,22 @@ main {
 
 .title h2 {
   font-size: 4rem;
-  color: #102a42;
+  color: var(--dark-blue);
 }
 
 .title p {
-  color: #617d98;
   font-size: 1.75rem;
   margin: 0.75rem auto 1rem;
+  color: var(--grayish-blue);
 }
 
 .container {
   width: 90vw;
+  display: grid;
+  row-gap: 3rem;
   margin: 0 auto;
-  max-width: 1170px;
+  grid-template-columns: 1fr;
+  max-width: var(--max-width);
 }
 
 article {
@@ -73,7 +72,7 @@ article img {
 }
 
 .tab-btn:hover:not(.active) {
-  color: #49a6e9;
+  color: var(--light-blue);
   background: #ebf7ff;
 }
 
@@ -91,16 +90,15 @@ article img {
 }
 
 .content p {
-  color: #617d98;
   line-height: 1.5;
   font-size: 1.75rem;
   margin-top: 1.75rem;
+  color: var(--grayish-blue);
 }
 
 @media screen and (min-width: 992px) {
   .container {
     width: 95vw;
-    display: grid;
     column-gap: 2rem;
     grid-template-columns: 1fr 1fr;
   }

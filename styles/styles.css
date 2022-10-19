@@ -1,6 +1,6 @@
 body {
-  color: #262534;
   background: #e2e8f0;
+  color: var(--blackish-blue);
 }
 
 header {
@@ -22,11 +22,11 @@ header {
 }
 
 .header-text p {
-  color: #3f3d56;
   font-weight: 500;
   line-height: 1.75;
   font-size: 1.85rem;
   margin: 2rem 0 2.5rem;
+  color: var(--light-black);
 }
 
 .header-btn {
@@ -35,9 +35,9 @@ header {
   font-weight: 600;
   font-size: 1.75rem;
   display: inline-block;
-  background: #262534;
   padding: 1.25rem 2.5rem;
   text-transform: uppercase;
+  background: var(--blackish-blue);
 }
 
 .header-btn:hover {
@@ -118,7 +118,7 @@ section {
 }
 
 .tile-info h3 {
-  color: #262534;
+  color: var(--blackish-blue);
 }
 
 @media screen and (max-width: 992px) {

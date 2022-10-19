@@ -3,12 +3,7 @@ html {
 }
 
 body {
-  color: #102a42;
-  background: #f1f5f8;
-}
-
-a {
-  text-decoration: none;
+  color: var(--dark-blue);
 }
 
 .section-title {
@@ -18,8 +13,8 @@ a {
 
 .followers {
   width: 90vw;
-  max-width: 1170px;
   margin: 5rem auto;
+  max-width: var(--max-width);
 }
 
 .container {
@@ -39,7 +34,7 @@ a {
   border-radius: 0.5rem;
   padding: 2rem 3.5rem;
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--light-shadow);
 }
 
 .card img {
@@ -53,7 +48,7 @@ a {
 .card h4 {
   margin-bottom: 1.5rem;
   font-size: 0.85rem;
-  color: #617d98;
+  color: var(--grayish-blue);
 }
 
 .btn {

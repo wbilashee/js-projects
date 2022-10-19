@@ -1,11 +1,10 @@
 body {
   text-align: center;
-  background: #f1f5f8;
 }
 
 h2 {
   font-size: 3rem;
-  color: #102a42;
+  color: var(--dark-blue);
   letter-spacing: 0.2rem;
   margin: 6rem auto 3rem;
   text-transform: uppercase;
@@ -41,12 +40,12 @@ input[type="number"] {
   border: 0;
   outline: 0;
   cursor: pointer;
-  color: #102a42;
   padding: 1rem 1.25rem;
-  background: #49a6e9;
   border-radius: 0.75rem;
   letter-spacing: 0.2rem;
+  color: var(--dark-blue);
   text-transform: uppercase;
+  background: var(--light-blue);
   transition: var(--transition);
 }
 
@@ -64,9 +63,9 @@ input[type="number"] {
 }
 
 .result {
-  color: #617d98;
   line-height: 1.5;
   font-size: 1.75rem;
+  color: var(--grayish-blue);
 }
 
 @media screen and (max-width: 768px) {

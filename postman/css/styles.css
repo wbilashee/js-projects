@@ -1,14 +1,6 @@
-:root {
-  --color: #ff6c37;
-}
-
-body {
-  background: #f1f5f8;
-}
-
 h2 {
   text-align: center;
-  color: var(--color);
+  color: var(--dark-orange);
   margin: 4rem auto;
 }
 
@@ -84,7 +76,7 @@ textarea,
   border: none;
   color: white;
   font-size: 2.25rem;
-  background: var(--color);
+  background: var(--dark-orange);
 }
 
 #submit-btn {

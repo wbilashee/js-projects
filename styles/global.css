@@ -1,9 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
 
 :root {
+  --black: #222;
+  --gold: #c59d5f;
+  --almond: #96736c;
+  --orange: #ffc269;
+  --max-width: 1170px;
   --fixed-width: 620px;
+  --dark-red: #bb2525;
+  --pink-red: #fd8086;
+  --dark-blue: #102a42;
   --light-blue: #49a6e9;
+  --black-gold: #11100b;
+  --dark-orange: #ff6c37;
+  --slate-gray: #64748b;
+  --dark-gray: #334155;
+  --light-black: #3f3d56;
+  --grayish-blue: #617d98;
+  --blackish-blue: #262534;
   --transition: all 0.3s linear;
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 html {
@@ -22,7 +39,12 @@ html {
 
 body {
   font-size: 1.6rem;
+  background: #f1f5f8;
   font-family: "Quicksand", sans-serif;
+}
+
+li {
+  list-style: none;
 }
 
 a {
@@ -35,8 +57,5 @@ a {
   font-weight: 600;
   font-family: inherit;
   border-radius: 0.5rem;
-}
-
-.btn:hover {
   transition: var(--transition);
 }

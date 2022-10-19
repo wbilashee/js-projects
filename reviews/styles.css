@@ -1,6 +1,5 @@
 body {
   line-height: 1.45;
-  background: #f1f5f8;
 }
 
 main {
@@ -15,8 +14,8 @@ main {
 
 h2 {
   font-size: 4rem;
-  color: #102a42;
   text-align: center;
+  color: var(--dark-blue);
 }
 
 .underline {
@@ -38,7 +37,7 @@ h2 {
   text-align: center;
   background: white;
   border-radius: 1rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--light-shadow);
 }
 
 .img-container {

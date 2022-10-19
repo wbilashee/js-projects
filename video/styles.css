@@ -67,24 +67,24 @@ header h1 {
 
 .switch-btn span {
   cursor: pointer;
-  color: #49a6e9;
   font-size: 1.35rem;
   display: inline-block;
+  color: var(--light-blue);
   text-transform: capitalize;
 }
 
 .switch {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    margin: 0;
-    display: block;
-    background: #49a6e9;
-    border-radius: 0.5rem;
-    transition: var(--transition);
-  }
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  display: block;
+  border-radius: 0.5rem;
+  background: var(--light-blue);
+  transition: var(--transition);
+}
 
 .slide .switch {
   left: 50%;

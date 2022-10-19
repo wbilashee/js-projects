@@ -1,5 +1,5 @@
 body {
-  color: #102a42;
+  color: var(--dark-blue);
   background: url("../assets/tiles/modal-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -14,10 +14,10 @@ header {
 .banner {
   width: 90vw;
   padding: 6rem 0;
-  max-width: 620px;
   text-align: center;
   background: white;
   border-radius: 0.5rem;
+  max-width: var(--fixed-width);
 }
 
 .banner h2 {
@@ -81,7 +81,7 @@ header {
   border: 0;
   cursor: pointer;
   font-size: 4rem;
-  color: #bb2525;
+  color: var(--dark-red);
   background: transparent;
   transition: var(--transition);
 }

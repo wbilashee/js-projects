@@ -1,6 +1,5 @@
 body {
   text-align: center;
-  background: #f1f5f8;
 }
 
 main {
@@ -79,7 +78,7 @@ input {
 
 .error {
   font-size: 2rem;
-  color: #df3532;
+  color: var(--dark-red);
   background: #f1f5f8;
   text-transform: capitalize;
 }

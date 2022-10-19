@@ -1,6 +1,5 @@
 body {
   color: white;
-  background: #f1f5f8;
 }
 
 header {
@@ -48,17 +47,17 @@ section {
 }
 
 section h1 {
-  color: #102a42;
   font-size: 3.5rem;
   padding-top: 2rem;
   text-align: center;
+  color: var(--dark-blue);
 }
 
 footer {
   font-size: 2rem;
   text-align: center;
   padding: 7rem 1rem;
-  background: #102a42;
+  background: var(--dark-blue);
 }
 
 .top-link {

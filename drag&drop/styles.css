@@ -1,11 +1,7 @@
-body {
-  background: #f1f5f8;
-}
-
 h2 {
-  color: #102a42;
   text-align: center;
   margin-top: 10rem;
+  color: var(--dark-blue);
   text-transform: capitalize;
 }
 
@@ -20,7 +16,7 @@ h2 {
 .white-box {
   height: 20rem;
   background: white;
-  border: 2px solid #102a42;
+  border: 2px solid var(--dark-blue);
 }
 
 .img-box {
@@ -33,7 +29,7 @@ h2 {
 }
 
 .hold {
-  border: 2px double #102a42;
+  border: 2px double var(--dark-blue);
 }
 
 .dashed {

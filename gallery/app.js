@@ -34,8 +34,8 @@ class Gallery {
     openModal(selectedImage, list) {
         this.setMainImage(selectedImage);
         this.modalImages.innerHTML = list.map(function (image) {
-            return `<img src="${image.src}" title="${image.title}" class=${image.classList.contains("selected") ? "modal-img selected" : "selected"} data-id="${image.dataset.id}" alt="image"/>`
-        });
+            return `<img src="${image.src}" title="${image.title}" class="${selectedImage.dataset.id === image.dataset.id ? "modal-img selected" : "modal-img"}" data-id="${image.dataset.id}" alt="image"/>`
+        }).join("");
         this.modal.classList.add("open");
         this.closeBtn.addEventListener("click", this.closeModal);
         this.prevBtn.addEventListener("click", this.prevImage);
@@ -71,8 +71,8 @@ class Gallery {
         if (e.target.classList.contains("modal-img")) {
             const selected = this.modalImages.querySelector(".selected");
             selected.classList.remove("selected");
-            e.target.classList.add("selected");
             this.setMainImage(e.target);
+            e.target.classList.add("selected");
         }
     }
 }
